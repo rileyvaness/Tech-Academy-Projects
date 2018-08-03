@@ -8,6 +8,7 @@ class Program
 {
     static void Main()
     {
+        //THis is where the user will select a show for an Array
         int user;
         string[] stringArray = new string[5];
         stringArray[0] = "Macbeth";
@@ -23,7 +24,7 @@ class Program
 
         bool isShow = user == 0;
 
-
+        // switch statment with cases
         do
         {
             switch (user)
@@ -66,7 +67,7 @@ class Program
 
 
 
-
+        //This is where the user will see how many tickets they recieve
 
         int[] numArray = new int[] { 5, 2, 222, 23, 78 };
         Console.WriteLine("Select 0-4, to see how many tickets we will give you to this preformance:");
@@ -86,14 +87,14 @@ class Program
             }
             else
             {
-                Console.WriteLine("The variable is set to false.");
+                Console.WriteLine("Please choose a valid number.");
 
             }
             }
             while (!isTickets) ;
 
 
-
+        // This is where the user will see which theatre they will go to based on pulling from a list.
             Console.WriteLine("\n");
             Console.WriteLine("Select a number 0-5, to see which theatre you will attend the perforemance at: ");
             List<string> stringList = new List<string>();
@@ -126,7 +127,8 @@ class Program
         }
 
         while (!isTheatre);
-
+        
+        //Final message to the user.
         Console.WriteLine("\n \n");
         Console.WriteLine("Once again, thank you for your ongoing support. \n We hope you enjoy watching " + stringArray[user] + ", at " + stringList[user]);
         Console.ReadLine();
