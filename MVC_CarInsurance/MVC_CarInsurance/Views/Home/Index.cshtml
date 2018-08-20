@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Acme Car Insurance</h1>
+    <p class="lead">The leader in Auto Insurance since 1933!</p>
+    <p>Fill out a form below to recieve a quote!</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+
+
+<div class="card-body">
+
+<div class="row no-gutters mx-auto col-12">
+
+    <div class="form-group col-md-12 mx-auto">
+        <p>What is your first name?</p>
+        <input name="FirstName" type="text" class="form-control" placeholder="First Name" />
+    </div>
+    <div class="form-group col-md-12 mx-auto">
+        <p>What is your last name?</p>
+        <input name="LastName" type="text" class="form-control" placeholder="Last Name" />
+    </div>
+    <div class="form-group col-md-12">
+        <p> What is your Email Address?</p>
+        <input name="EmailAddress" type="email" class="form-control" placeholder="Email Address" />
+    </div>
+    <div class="form-group col-md-12">
+        <p>When were you born?</p>
+        <input name="DateOfBirth" type="date" class="form-control" placeholder="Date of Birth (mm/dd/yyyy" />
+    </div>
+    <div class="form-group col-md-12">
+        <p>What is the year of your car?</p>
+        <input name="CarYear" type="number" class="form-control" placeholder="Car Year" />
+    </div>
+    <div class="form-group col-md-12">
+        <p>What is the make of your car?</p>
+        <input name="CarMake" type="text" class="form-control" placeholder="Car Make" />
+    </div>
+    <div class="form-group col-md-12">
+        <p>What is the model of your car?</p>
+        <input name="CarModel" type="text" class="form-control" placeholder="Car Model" />
+    </div>
+    <div class="form-check form-group col-md-12">
+        <p class="mt-6">Have you ever had a DUI?</p>
+        <input name="Dui" type="radio" class="form-check-input btn-block" id="yes" value="true">
+        <label class="form-check-label" for="yes">Yes</label>
+        <input name="Dui" type="radio" class="form-check-input btn-block" id="no" value="false" checked="checked">
+        <label class="form-check-label" for="no">No</label>
+    </div>
+
+    <div class="form-group col-md-12">
+        <p>How many tickets have you had?</p>
+        <input name="Tickets" type="number" class="form-control text-center" placeholder="Tickets">
+    </div>
+
+    <div class="form-check form-group col-md-12">
+        <p class="mt-6">What type of coverage would you be interested in?</p>
+        <input name="Coverage" type="radio" class="form-check-input btn-block" value="true">
+        <label class="form-check-label" for="true">Full</label>
+        <input name="Coverage" type="radio" class="form-check-input btn-block" value="false">
+        <label class="form-check-label" for="false">Liability</label>
+    </div>
+
+    <div class="form-row text-center">
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" value="Create">Submit</button>
+        </div>
+    </div>
+</div>
+</div>
