@@ -45,7 +45,6 @@ namespace MVC_CarInsurance.Controllers
         // POST: Insuree/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-     
 
 
 
@@ -55,14 +54,14 @@ namespace MVC_CarInsurance.Controllers
 
 
 
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public ActionResult Create (string FirstName, string LastName, string EmailAddress, DateTime DateOfBirth, int CarYear, string CarMake, string CarModel, bool Dui, int Tickets, bool Coverage)
+
+        [HttpPost]
+        public ActionResult Create(string FirstName, string LastName, string EmailAddress, DateTime DateOfBirth, int CarYear, string CarMake, string CarModel, bool Dui, int SpeedingTickets, bool CoverageType)
 
 
-    {
+        {
             if (string.IsNullOrEmpty(FirstName) || string.IsNullOrEmpty(LastName) || string.IsNullOrEmpty(EmailAddress)
-           
+
                || string.IsNullOrEmpty(CarMake) || string.IsNullOrEmpty(CarModel))
             {
                 return View("~/Views/Shared/Error.cshtml");
@@ -73,14 +72,14 @@ namespace MVC_CarInsurance.Controllers
                 using (InsuranceEntities db = new InsuranceEntities())
                 {
 
-                    decimal Quote = 50.00m;
+                    var Quote = 50.00;
                     var quote = new Insuree();
 
                     quote.FirstName = FirstName;
 
                     quote.LastName = LastName;
 
-                   quote.EmailAddress = EmailAddress;
+                    quote.EmailAddress = EmailAddress;
 
                     quote.DateOfBirth = DateOfBirth;
 
@@ -92,11 +91,13 @@ namespace MVC_CarInsurance.Controllers
 
                     quote.DUI = Dui;
 
-                   quote.SpeedingTickets = Tickets;
+                    quote.SpeedingTickets = SpeedingTickets;
 
-                   quote.CoverageType = Coverage;
+                    quote.CoverageType = CoverageType;
 
-                 
+                    quote.Quote = Convert.ToDecimal(Quote);
+
+
                     var today = DateTime.Now;
                     var insureeAge = today.Year - DateOfBirth.Year;
                     if (DateOfBirth > today.AddYears(-insureeAge)) insureeAge--;
@@ -104,39 +105,38 @@ namespace MVC_CarInsurance.Controllers
                     {
                         Quote += 100;
                     }
-                   
+
                     if (CarYear < 2000 || CarYear > 2015)
                     {
                         Quote += 25;
                     }
-                    
+
                     if (CarMake.ToLower() == "porsche")
-                    {
-                        Quote+= 25;
-                    }
-                    if(CarMake.ToLower() == "porsche" && (CarModel.ToLower() == "911 carrera"))
                     {
                         Quote += 25;
                     }
-                    if (Tickets > 0)
+                    if (CarMake.ToLower() == "porsche" && (CarModel.ToLower() == "911 carrera"))
                     {
-                        Quote += (Tickets * 10);
+                        Quote += 25;
+                    }
+                    if (SpeedingTickets > 0)
+                    {
+                        Quote += (SpeedingTickets * 10);
                     }
                     if (Dui == true)
                     {
-                       Quote = Quote * 1.25;
+                        Quote = Quote * 1.25;
                     }
-                    if (Coverage == true)
+                    if (CoverageType == true)
                     {
                         Quote = Quote * 1.5;
                     }
-           
-                }
-            }
-                    quote.Quote = quote;
+                    quote.Quote = Convert.ToDecimal(quote);
                     db.Insurees.Add(quote);
                     db.SaveChanges();
-                
+                }
+            }
+          
         
         
                    
@@ -164,7 +164,6 @@ namespace MVC_CarInsurance.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
         {
             if (ModelState.IsValid)
@@ -193,7 +192,6 @@ namespace MVC_CarInsurance.Controllers
 
         // POST: Insuree/Delete/5
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
             Insuree insuree = db.Insurees.Find(id);
