@@ -15,7 +15,7 @@ namespace MVC_CarInsurance.Controllers
         public InsuranceEntities db = new InsuranceEntities();
 
         // GET: Insuree
-        public ActionResult Index()
+        public ActionResult Admin()
         {
             return View(db.Insurees.ToList());
         }
@@ -64,7 +64,7 @@ namespace MVC_CarInsurance.Controllers
 
                || string.IsNullOrEmpty(CarMake) || string.IsNullOrEmpty(CarModel))
             {
-                return View("~/Views/Shared/Error.cshtml");
+                return View("~/Views/Insuree/Error.cshtml");
             }
 
             else
@@ -131,18 +131,15 @@ namespace MVC_CarInsurance.Controllers
                     {
                         Quote = Quote * 1.5;
                     }
-                    quote.Quote = Convert.ToDecimal(quote);
+                quote.Quote = Convert.ToDecimal(Quote);
+                    ViewBag.quote = Quote;
                     db.Insurees.Add(quote);
                     db.SaveChanges();
-                }
+                };
+                return View("Quote");
             }
           
-        
-        
-                   
-
-
-        return RedirectToAction("~/Views/Insuree/Quote.cshtml");
+      
     }
 
     // GET: Insuree/Edit/5
@@ -170,7 +167,7 @@ namespace MVC_CarInsurance.Controllers
             {
                 db.Entry(insuree).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Admin");
             }
             return View(insuree);
         }
@@ -197,7 +194,7 @@ namespace MVC_CarInsurance.Controllers
             Insuree insuree = db.Insurees.Find(id);
             db.Insurees.Remove(insuree);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Admin");
         }
 
         protected override void Dispose(bool disposing)

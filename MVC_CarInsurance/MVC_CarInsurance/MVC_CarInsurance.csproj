@@ -235,15 +235,14 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Insuree\Create.cshtml" />
     <Content Include="Views\Insuree\Delete.cshtml" />
     <Content Include="Views\Insuree\Details.cshtml" />
     <Content Include="Views\Insuree\Edit.cshtml" />
-    <Content Include="Views\Insuree\Index.cshtml" />
-    <Content Include="Views\Insuree\Success.cshtml" />
+    <Content Include="Views\Insuree\Admin.cshtml" />
+    <Content Include="Views\Insuree\Error.cshtml" />
     <Content Include="Views\Insuree\Quote.cshtml" />
   </ItemGroup>
   <ItemGroup />
