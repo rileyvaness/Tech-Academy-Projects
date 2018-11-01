@@ -11,8 +11,9 @@
                                                                                                                                                     <h3> JavaScript </h3>
                                                                                                                                                     
                                                                                                                                                     <a href="https://github.com/rileyvaness/javascript_pizza_menu"> Pizza Menu </a> 
-                                                                                                                                                    <p> Pizza menu designed 100% in vanilla JavaScript. This excercise really helped me on my path to understanding some of the logic involved in JavaScript. </p> <br>
-                                                                                                                                                    <a href= "https://github.com/rileyvaness/SPA-Grocery-List-/tree/master/SpaGroceryList"> Grocery List</a><br>
+                                                                                                                                                    <p> Pizza menu designed 100% in vanilla JavaScript. This excercise really helped me on my path to understanding some of the logic involved in JavaScript. </p> 
+                                                                                                                                                    <a href="https://github.com/rileyvaness/SPA-Grocery-List-/tree/master/SpaGroceryList"> Grocery List</a> 
+                                                                                                                                                    
   <p> A single page grocery list application written in Microsoft's Visual Studio. I utilized Knockout JS in the creation of this. </p>                                                                                                                                                    <h3> SQL </h3> <br>
                                                                                                                                                     <a href="https://github.com/rileyvaness/Library_Database"> Library Database </a>
                                                                                                                                                     <p> This is a fictional library database I constructed to help me understand how to run queries against certain criteria in SQL </p>
@@ -34,10 +35,10 @@
 <a href= "https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/LoopingExample/LoopingExample"> Looping </a><br>
 <a href ="https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/OverloadOperators/OverloadOperators"> Overload Operators </a><br>
 <a href= "https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/StringsProgram/StringsProgram">Strings </a><br>
-<a href= "https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/Structs/Structs"> Structs  </a><br>     
+<a href= "https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/Structs/Structs"> Structs  </a><br>   <br>  
                                                                                                                                                     
                                                                                                                               
-                
+               
 
 <a href ="https://github.com/rileyvaness/Tech-Academy-Projects/blob/master/MVC_CarInsurance/MVC_CarInsurance/Controllers/InsureeController.cs"> MVC Car Insurance</a><br> 
 <p> An MVC (Model, View, Controller) app I created that will properly calculate a quote based on information the user inputs and then stores it for the Admin to see </p>
