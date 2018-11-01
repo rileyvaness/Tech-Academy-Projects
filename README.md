@@ -16,10 +16,25 @@
 <a href ="https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/OverloadOperators/OverloadOperators"> Overload Operators </a><br>
 <a href= "https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/StringsProgram/StringsProgram">Strings </a><br>
 <a href= "https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/Structs/Structs"> Structs  </a><br>
-                                                                                           <h2> Projects and Tutorials</h2>
-                                                                                
-<a href ="https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/Demo/CarInsuranceApproval/CarInsuranceApproval"> Car Insurance Approval</a><br> <p> A console based app that decides if some of is eligible for car insurance based upon the input they give <p>
-<a href= "https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/SpaWithKnockoutJS/SpaWithKnockoutJS"> Grocery List</a><br>
+                                                                                           <h2> Projects and Tutorials</h2><br>
+                                                                                           <h3> HTML </h3>             <br>
+                                                                                           <a href="https://github.com/rileyvaness/spacesiteproject"> Space Site </a>
+                   <p> A fictional space website I worked on at the Tech Academy to further cement my knowledge of HTML. </p>
+                                                                                                                                                    <h3> CSS </h3>
+                                       <br>
+                                                                                                                                                    <a href="https://github.com/rileyvaness/loginform-"> Login Form </a>
+                                                                                                                                                    <p> A login form designed during my time at The Tech Academy to practice my CSS skills. </p>
+                                                                                                                                                    <h3> JavaScript </h3><br>
+                                                                                                                                                    <br>
+                                                                                                                                                    <a href="https://github.com/rileyvaness/javascript_pizza_menu"> Pizza Menu </a> 
+                                                                                                                                                    <p> Pizza menu designed 100% in vanilla JavaScript. This excercise really helped me on my path to understanding some of the logic involved in JavaScript. </p>
+                                                                                                                                                    <h3> SQL </h3> <br>
+                                                                                                                                                    <a href="https://github.com/rileyvaness/Library_Database"> Library Database </a>
+                                                                                                                                                    <p> This is a fictional library database I constructed to help me understand how to run queries against certain criteria in SQL </p>
+                                                                                                                                                    <h3> C# and ASP.NET </h3>
+                                                                                                                              
+                             <a href ="https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/Demo/CarInsuranceApproval/CarInsuranceApproval"> Car Insurance Approval</a><br> <p> A console based app that decides if some of is eligible for car insurance based upon the input they give <p>
+<a href= "https://github.com/rileyvaness/SPA-Grocery-List-/tree/master/SpaGroceryList"> Grocery List</a><br>
   <p> A single page grocery list application written in Microsoft's Visual Studio. I utilized Knockout JS in the creation of this. </p>
 <a href ="https://github.com/rileyvaness/Tech-Academy-Projects/blob/master/MVC_CarInsurance/MVC_CarInsurance/Controllers/InsureeController.cs"> MVC Car Insurance</a><br> 
 <p> An MVC (Model, View, Controller) app I created that will properly calculate a quote based on information the user inputs and then stores it for the Admin to see </p>
