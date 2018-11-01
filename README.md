@@ -18,7 +18,7 @@
 <a href= "https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/Structs/Structs"> Structs  </a><br>
                                                                                            <h2> Projects and Tutorials</h2>
                                                                                 
-<a href ="https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/Demo/CarInsuranceApproval/CarInsuranceApproval"> Car Insurance Approval</a><br> <p> A console based app that decides if some of is eligible for car insurance based upon the input they give <p><br>
+<a href ="https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/Demo/CarInsuranceApproval/CarInsuranceApproval"> Car Insurance Approval</a><br> <p> A console based app that decides if some of is eligible for car insurance based upon the input they give <p>
 <a href= "https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/SpaWithKnockoutJS/SpaWithKnockoutJS"> Grocery List</a><br>
   <p> A single page grocery list application written in Microsoft's Visual Studio. I utilized Knockout JS in the creation of this. </p>
 <a href ="https://github.com/rileyvaness/Tech-Academy-Projects/blob/master/MVC_CarInsurance/MVC_CarInsurance/Controllers/InsureeController.cs"> MVC Car Insurance</a><br> 
