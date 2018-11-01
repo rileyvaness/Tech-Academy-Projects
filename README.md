@@ -23,7 +23,7 @@
   <p> A single page grocery list application written in Microsoft's Visual Studio. I utilized Knockout JS in the creation of this. </p>
 <a href ="https://github.com/rileyvaness/Tech-Academy-Projects/blob/master/MVC_CarInsurance/MVC_CarInsurance/Controllers/InsureeController.cs"> MVC Car Insurance</a><br> 
 <p> An MVC (Model, View, Controller) app I created that will properly calculate a quote based on information the user inputs and then stores it for the Admin to see </p>
-<a href= " https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/ContosoUniversity/ContosoUniversity"> Contoso University </a><br>
+<a href= "https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/ContosoUniversity/ContosoUniversity"> Contoso University </a><br>
 <p> This is a tutorial that was created by Microsoft that I followed along to in order to better aquaint myself with the MVC. You may find the tutorial <a href="https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application"> here </a>.
 
 
