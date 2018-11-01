@@ -8,7 +8,7 @@
                                        <br>
                                                                                                                                                     <a href="https://github.com/rileyvaness/loginform-"> Login Form </a>
                                                                                                                                                     <p> A login form designed during my time at The Tech Academy to practice my CSS skills. </p>
-                                                                                                                                                    <h3> JavaScript </h3><br>
+                                                                                                                                                    <h3> JavaScript </h3>
                                                                                                                                                     
                                                                                                                                                     <a href="https://github.com/rileyvaness/javascript_pizza_menu"> Pizza Menu </a> 
                                                                                                                                                     <p> Pizza menu designed 100% in vanilla JavaScript. This excercise really helped me on my path to understanding some of the logic involved in JavaScript. </p> <br>
@@ -37,7 +37,7 @@
 <a href= "https://github.com/rileyvaness/Tech-Academy-Projects/tree/master/Structs/Structs"> Structs  </a><br>     
                                                                                                                                                     
                                                                                                                               
-                 
+                
 
 <a href ="https://github.com/rileyvaness/Tech-Academy-Projects/blob/master/MVC_CarInsurance/MVC_CarInsurance/Controllers/InsureeController.cs"> MVC Car Insurance</a><br> 
 <p> An MVC (Model, View, Controller) app I created that will properly calculate a quote based on information the user inputs and then stores it for the Admin to see </p>
