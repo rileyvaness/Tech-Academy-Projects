@@ -1,5 +1,4 @@
-
-                                                                                           <h3> HTML </h3>             <br>
+  <h3> HTML </h3>             <br>
                                                                                            <a href="https://github.com/rileyvaness/spacesiteproject"> Space Site </a>
                    <p> A fictional space website I worked on at the Tech Academy to further cement my knowledge of HTML. </p>
                                                                                                                                                     <h3> CSS </h3>
